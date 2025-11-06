@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 // import './Header.css'; 
 
 const Header = () => {
@@ -86,7 +88,6 @@ const Header = () => {
                         {/* Mobile Menu */}
                         <div className={`mobile-header-menu ${isMenuActive ? 'mob-menu-active' : ''}`}>
                             <div className="mobile-header-menu-wrap">
-                                {/* Close Icon */}
                                 <button
                                     className="close-menu"
                                     onClick={() => setIsMenuActive(false)}
@@ -96,7 +97,13 @@ const Header = () => {
                                 </button>
 
                                 <ul>
-                                    {['Home', 'Aanbod', 'Diensten', 'Werkplaats', 'Over ons'].map((item, index) => (
+                                    {[
+                                        { name: 'Home', path: '/' },
+                                        { name: 'Aanbod', path: '/Aanbodlist' },
+                                        { name: 'Diensten', path: '/Dienstenlist' },
+                                        { name: 'Werkplaats', path: '/werkplaats' },
+                                        { name: 'Over ons', path: '/OverOns' }
+                                    ].map((item, index) => (
                                         <li
                                             key={index}
                                             className={isMenuActive ? 'active' : ''}
@@ -106,9 +113,12 @@ const Header = () => {
                                                 OAnimationDelay: `${0.2 * (1 + index)}s`
                                             }}
                                         >
-                                            <a href="#" onClick={() => setIsMenuActive(false)}>
-                                                {item}
-                                            </a>
+                                            <Link
+                                                to={item.path}
+                                                onClick={() => setIsMenuActive(false)}
+                                            >
+                                                {item.name}
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

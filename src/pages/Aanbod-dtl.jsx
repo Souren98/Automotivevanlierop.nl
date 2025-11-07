@@ -111,7 +111,7 @@ const AanbodDtl = () => {
       monthly: "€ 310 per maand",
       link: "#",
     },
-     {
+    {
       id: 4,
       img: "/assets/product-car.jpg",
       title: "Volkswagen Polo",
@@ -123,7 +123,7 @@ const AanbodDtl = () => {
       monthly: "€ 310 per maand",
       link: "#",
     },
-       {
+    {
       id: 5,
       img: "/assets/product-car.jpg",
       title: "Volkswagen Polo",
@@ -135,7 +135,7 @@ const AanbodDtl = () => {
       monthly: "€ 310 per maand",
       link: "#",
     },
-       {
+    {
       id: 6,
       img: "/assets/product-car.jpg",
       title: "Volkswagen Polo",
@@ -169,11 +169,9 @@ const AanbodDtl = () => {
         <div className="container">
           <div className="aanbod-top-area">
             <div className="row">
-              {/* Left Side */}
               <div className="col-lg-8">
                 <div className="aanbod-top-left-part">
                   <div className="row">
-                    {/* Slider */}
                     <div className="col-lg-9">
                       <div className="aanbod-top-slider position-relative">
                         <Swiper
@@ -213,8 +211,6 @@ const AanbodDtl = () => {
                         </div>
                       </div>
                     </div>
-
-                    {/* Right Images */}
                     <div className="col-lg-3">
                       <div className="aanbod-top-slider-right-img">
                         <div className="each-aanbod-top-slider-right-img">
@@ -236,8 +232,6 @@ const AanbodDtl = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Right Side Info */}
               <div className="col-lg-4">
                 <div className="aanbod-top-right-part">
                   <div className="aanbod-top-right-title">
@@ -767,97 +761,95 @@ const AanbodDtl = () => {
       </section>
 
       <section className="product-sec aanbod-product-sec">
-      <div className="common-wrap">
-        <div className="product-sec-wrap">
-          <div className="container">
-            <div className="product-title">
-              <h2>
-                Gerelateerde <strong>voertuigen</strong>
-              </h2>
-            </div>
+        <div className="common-wrap">
+          <div className="product-sec-wrap">
+            <div className="container">
+              <div className="product-title">
+                <h2>
+                  Gerelateerde <strong>voertuigen</strong>
+                </h2>
+              </div>
 
-            <div className="product-slider position-relative">
-              <Swiper
-                modules={[Navigation]}
-                navigation={{
-                  nextEl: ".aanbod-product-sec .swiper-button-next",
-                  prevEl: ".aanbod-product-sec .swiper-button-prev",
-                }}
-                spaceBetween={20}
-                slidesPerView={1}
-                loop={false}
-                breakpoints={{
-                  320: { slidesPerView: 1, spaceBetween: 10 },
-                  768: { slidesPerView: 1, spaceBetween: 20 },
-                  992: { slidesPerView: 2, spaceBetween: 20 },
-                  1200: { slidesPerView: 3, spaceBetween: 30 },
-                }}
-              >
-                {relatedProducts.map((item) => (
-                  <SwiperSlide key={item.id}>
-                    <a href={item.link}>
-                      <div className="each-product">
-                        <div className="each-product-img position-relative">
-                          <img
-                            src={item.img}
-                            alt={item.title}
-                            className="w-100"
-                          />
-                          <div className="product-plus">
+              <div className="product-slider position-relative">
+                <Swiper
+                  modules={[Navigation]}
+                  navigation={{
+                    nextEl: ".aanbod-product-sec .swiper-button-next",
+                    prevEl: ".aanbod-product-sec .swiper-button-prev",
+                  }}
+                  spaceBetween={20}
+                  slidesPerView={1}
+                  loop={false}
+                  breakpoints={{
+                    320: { slidesPerView: 1, spaceBetween: 10 },
+                    768: { slidesPerView: 1, spaceBetween: 20 },
+                    992: { slidesPerView: 2, spaceBetween: 20 },
+                    1200: { slidesPerView: 3, spaceBetween: 30 },
+                  }}
+                >
+                  {relatedProducts.map((item) => (
+                    <SwiperSlide key={item.id}>
+                      <a href={item.link}>
+                        <div className="each-product">
+                          <div className="each-product-img position-relative">
                             <img
-                              src="/assets/product-plus.svg"
-                              alt="plus"
+                              src={item.img}
+                              alt={item.title}
+                              className="w-100"
                             />
+                            <div className="product-plus">
+                              <img
+                                src="/assets/product-plus.svg"
+                                alt="plus"
+                              />
+                            </div>
+                          </div>
+                          <div className="each-product-text">
+                            <h3>{item.title}</h3>
+                            <p>{item.desc}</p>
+                            <ul>
+                              <li>
+                                <h6>
+                                  <strong>Bouwjaar</strong>
+                                </h6>
+                                <h6>{item.year}</h6>
+                              </li>
+                              <li>
+                                <h6>
+                                  <strong>Brandstof</strong>
+                                </h6>
+                                <h6>{item.fuel}</h6>
+                              </li>
+                              <li>
+                                <h6>
+                                  <strong>Transmissie</strong>
+                                </h6>
+                                <h6>{item.transmission}</h6>
+                              </li>
+                              <li>
+                                <h6>
+                                  <strong>{item.price}</strong>
+                                </h6>
+                                <h6>{item.monthly}</h6>
+                              </li>
+                            </ul>
                           </div>
                         </div>
-                        <div className="each-product-text">
-                          <h3>{item.title}</h3>
-                          <p>{item.desc}</p>
-                          <ul>
-                            <li>
-                              <h6>
-                                <strong>Bouwjaar</strong>
-                              </h6>
-                              <h6>{item.year}</h6>
-                            </li>
-                            <li>
-                              <h6>
-                                <strong>Brandstof</strong>
-                              </h6>
-                              <h6>{item.fuel}</h6>
-                            </li>
-                            <li>
-                              <h6>
-                                <strong>Transmissie</strong>
-                              </h6>
-                              <h6>{item.transmission}</h6>
-                            </li>
-                            <li>
-                              <h6>
-                                <strong>{item.price}</strong>
-                              </h6>
-                              <h6>{item.monthly}</h6>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </a>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-
-              {/* Swiper Arrows */}
-              <div className="swiper-button-prev common-arrow">
-                <img src="/assets/prev.svg" alt="prev" />
-              </div>
-              <div className="swiper-button-next common-arrow">
-                <img src="/assets/next.svg" alt="next" />
+                      </a>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <div className="swiper-button-prev common-arrow">
+                  <img src="/assets/prev.svg" alt="prev" />
+                </div>
+                <div className="swiper-button-next common-arrow">
+                  <img src="/assets/next.svg" alt="next" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <section className="google-review">
         <div className="container">

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const ReceptionistVacature = () => {
    useEffect(() => {
-      // Elfsight script already loads only once
+    
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -15,7 +15,7 @@ const ReceptionistVacature = () => {
     }, []);
   return (
     <main>
-      {/* Back Button Section */}
+      
       <section className="back-btn">
         <div className="container">
           <a href="#" className="common-btn border-btn">
@@ -25,7 +25,7 @@ const ReceptionistVacature = () => {
         </div>
       </section>
 
-      {/* Top Detail Section */}
+     
       <section className="diens-dtl-top-sec vacature-dtl-top-sec">
         <div className="diens-dtl-top-mark">
           <img src="assets/diens-dtl-mark.svg" alt="" className="w-100" />
@@ -69,7 +69,7 @@ const ReceptionistVacature = () => {
         </div>
       </section>
 
-      {/* Mid Detail Section */}
+    
       <section className="diens-dtl-mid-sec vacature-dtl-mid-sec">
         <div className="container">
           <div className="diens-dtl-mid-area">
@@ -107,7 +107,7 @@ const ReceptionistVacature = () => {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+     
       <section className="form-sec">
         <div className="common-wrap">
           <div className="form-sec-wrap">
@@ -195,7 +195,7 @@ const ReceptionistVacature = () => {
         </div>
       </section>
 
-      {/* Related Vacatures Section */}
+      
       <section className="service-sec diend-dtl-service-sec">
         <div className="container">
           <div className="service-title text-center">

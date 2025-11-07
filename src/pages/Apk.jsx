@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const ApkDetail = () => {
    useEffect(() => {
-      // Elfsight script already loads only once
+ 
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -15,7 +15,7 @@ const ApkDetail = () => {
     }, []);
   return (
     <main>
-      {/* Back Button */}
+     
       <section className="back-btn">
         <div className="container">
           <a href="#" className="common-btn border-btn">
@@ -25,7 +25,7 @@ const ApkDetail = () => {
         </div>
       </section>
 
-      {/* Top APK Section */}
+      
       <section className="diens-dtl-top-sec apk-top-sec">
         <div className="diens-dtl-top-mark">
           <img src="assets/diens-dtl-mark.svg" alt="" className="w-100" />
@@ -66,7 +66,7 @@ const ApkDetail = () => {
         </div>
       </section>
 
-      {/* Mid Detail Section */}
+     
       <section className="diens-dtl-mid-sec">
         <div className="container">
           <div className="diens-dtl-mid-area">
@@ -114,7 +114,7 @@ const ApkDetail = () => {
         </div>
       </section>
 
-      {/* Form Section */}
+      
       <section className="form-sec werkplaats-form">
         <div className="common-wrap">
           <div className="form-sec-wrap">
@@ -234,7 +234,7 @@ const ApkDetail = () => {
                         </div>
                       </div>
 
-                      {/* Selects and Date */}
+                    
                       <div className="col-lg-3">
                         <div className="form-group">
                           <select id="TypeOnderhoud" className="form-control form-styl">
@@ -297,15 +297,15 @@ const ApkDetail = () => {
         </div>
       </section>
 
-      {/* Related Werkplaats Section */}
+      
       <section className="service-sec diend-dtl-service-sec">
         <div className="container">
           <div className="service-title text-center">
             <h2>Gerelateerde <strong>werkplaats</strong></h2>
           </div>
           <div className="dienst-dtl-service-grid">
-            <div className="row g-4"> {/* Added g-4 for gap spacing */}
-              {/* First row */}
+            <div className="row g-4"> 
+             
               <div className="col-lg-6">
                 <a href="">
                   <div className="each-service-block position-relative h-100">
@@ -349,7 +349,7 @@ const ApkDetail = () => {
                 </a>
               </div>
 
-              {/* Second row */}
+             
               <div className="col-lg-6">
                 <a href="">
                   <div className="each-service-block position-relative h-100">

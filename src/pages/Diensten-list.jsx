@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const Dienstenlist = () => {
 
      useEffect(() => {
-        // Elfsight script already loads only once
+       
         const scriptId = "elfsight-platform-script";
     
         if (!document.getElementById(scriptId)) {

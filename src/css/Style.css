@@ -13,14 +13,10 @@ body {
     font-family: 'HelveticaNeue-Regular';
     font-size: 1.6rem;
 	background-color: #F8F8F8;
-    /*overflow-x: hidden;*/
 }
 html {
     font-size: 62.5%;
 }
-/*#page{
-	overflow: hidden;
-}*/
 .dblock{
 	display:none;
 }
@@ -365,7 +361,7 @@ html {
 .each-banner {
   position: relative;
   width: 100%;
-  height: 100vh; /* or your desired height */
+  height: 100vh; 
   overflow: hidden;
 }
 
@@ -1287,6 +1283,7 @@ html {
 	color: #fff;
 	font-size: 1.6rem;
 	line-height: 24px;
+    padding: 5px;
 }
 .each-footer-btm a:hover {
 	color: rgba(255, 255, 255, 0.50);
@@ -1631,15 +1628,7 @@ html {
     border: 2px solid transparent;
 }
 
-/* .common-btn:not(.border-btn) {
-    background-color: #D1363F;
-    color: white;
-} */
 
-/* .common-btn:not(.border-btn):hover {
-    background-color: #b02a32;
-} */
- 
 .aanbod-top-right-btn .border-btn {
     background-color: #F8F8F8;
     border-color: #14112C;
@@ -2295,7 +2284,6 @@ ul.tabs li::after {
     padding-top: 100px;
 }
 .contact-banner-img iframe{
-    /* padding-top: 80px; */
     height: 100%;
     width: 100%;
 
@@ -2505,7 +2493,6 @@ ul.tabs li::after {
 }
 .diens-dtl-top-mark{
     position: absolute;
-    /* top: -16%; */
     top: 0;
     width: 100%;
     pointer-events: none;
@@ -3125,7 +3112,6 @@ ul.tabs li::after {
   width: 40px;
   height: 40px;
   background: #3498db;
-  /* border-radius: 50%; */
   color: white;
 }
 
@@ -3275,9 +3261,6 @@ ul.tabs li::after {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-}
-.menu-bar .common-btn.active {
-    /* Add styles for active menu button if needed */
 }
 .overflow-hidden {
     overflow: hidden;

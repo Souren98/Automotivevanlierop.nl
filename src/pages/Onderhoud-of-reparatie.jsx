@@ -22,7 +22,7 @@ const Werkplaats = () => {
   const validate = () => {
     const newErrors = {};
 
-    // Required field checks
+    
     if (!formData.voornaam.trim()) newErrors.voornaam = "First name is required";
     if (!formData.achternaam.trim()) newErrors.achternaam = "Last name is required";
     if (!formData.telefoon.trim()) newErrors.telefoon = "Phone number is required";
@@ -30,19 +30,19 @@ const Werkplaats = () => {
     if (!formData.merk.trim()) newErrors.merk = "Merk is required";
     if (!formData.type.trim()) newErrors.type = "Type is required";
 
-    // Email validation
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (formData.email && !emailRegex.test(formData.email)) {
       newErrors.email = "Enter a valid email address";
     }
 
-    // Phone validation
+   
     const phoneRegex = /^[0-9+\-\s]{6,}$/;
     if (formData.telefoon && !phoneRegex.test(formData.telefoon)) {
       newErrors.telefoon = "Enter a valid phone number";
     }
 
-    // Date format (optional)
+    
     const dateRegex = /^\d{2}\/\d{2}\/\d{4}$/;
     if (formData.datum && !dateRegex.test(formData.datum)) {
       newErrors.datum = "Use the format mm/dd/yyyy";
@@ -66,7 +66,7 @@ const Werkplaats = () => {
   };
 
    useEffect(() => {
-      // Elfsight script already loads only once
+      
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -80,7 +80,7 @@ const Werkplaats = () => {
 
   return (
     <main>
-      {/* Back Button */}
+      
       <section className="back-btn">
         <div className="container">
           <a href="#" className="common-btn border-btn">
@@ -90,7 +90,7 @@ const Werkplaats = () => {
         </div>
       </section>
 
-      {/* Top Section */}
+     
       <section className="diens-dtl-top-sec apk-top-sec">
         <div className="diens-dtl-top-mark">
           <img src="assets/diens-dtl-mark.svg" alt="" className="w-100" />
@@ -130,7 +130,7 @@ const Werkplaats = () => {
         </div>
       </section>
 
-      {/* Middle Section */}
+     
       <section className="diens-dtl-mid-sec">
         <div className="container">
           <div className="diens-dtl-mid-area">
@@ -179,7 +179,7 @@ const Werkplaats = () => {
         </div>
       </section>
 
-      {/* Form Section */}
+    
        <section className="form-sec werkplaats-form">
       <div className="common-wrap">
         <div className="form-sec-wrap">
@@ -207,7 +207,7 @@ const Werkplaats = () => {
               <div className="form-area">
                 <form onSubmit={handleSubmit}>
                   <div className="row">
-                    {/* ---- PERSOONLIJKE GEGEVENS ---- */}
+                    
                     <div className="col-lg-12">
                       <div className="form-area-heading">
                         <h3>UW GEGEVENS</h3>
@@ -235,7 +235,7 @@ const Werkplaats = () => {
                       </div>
                     ))}
 
-                    {/* ---- AUTO GEGEVENS ---- */}
+                    
                     <div className="col-lg-12">
                       <div className="form-area-heading">
                         <h3>AUTO GEGEVENS</h3>
@@ -351,7 +351,7 @@ const Werkplaats = () => {
       </div>
     </section>
 
-      {/* Related Services */}
+     
       <section className="service-sec diend-dtl-service-sec">
   <div className="container">
     <div className="service-title text-center">

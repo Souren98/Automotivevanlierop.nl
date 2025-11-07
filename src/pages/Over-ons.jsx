@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import './TeamSection.css';
 
 const OverOns = () => {
   const swiperRef = useRef(null);
@@ -13,7 +12,7 @@ const OverOns = () => {
     setActiveSlideItem(activeSlideItem);
     console.log("activeSlideItem ", activeSlideItem);
     const slides = document.querySelectorAll('.team-slider .swiper-slide');
-    // Add active class to clicked slide
+    
     if (slides[activeSlideItem]) {
       slides[activeSlideItem].classList.add('team-active');
     }
@@ -22,11 +21,11 @@ const OverOns = () => {
   }, [activeSlideItem]);
 
   const handleSlideClick = (index) => {
-    // Remove active class from all slides
+   
     const slides = document.querySelectorAll('.team-slider .swiper-slide');
     slides.forEach(slide => slide.classList.remove('team-active'));
     setActiveSlideItem(index)
-    // Add active class to clicked slide
+   
     if (slides[index]) {
       slides[index].classList.add('team-active');
     }
@@ -79,7 +78,7 @@ const OverOns = () => {
   ];
 
    useEffect(() => {
-      // Elfsight script already loads only once
+      
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -93,7 +92,7 @@ const OverOns = () => {
 
   return (
     <main>
-      {/* Inner Banner */}
+      
       <section className="inner-banner">
         <div className="over-one-banner-mark">
           <img src="assets/over-one-banner-mark.svg" alt="" className="w-100" />
@@ -110,7 +109,7 @@ const OverOns = () => {
         </div>
       </section>
 
-      {/* Top Features */}
+      
       <section className="over-one-top-sec">
         <div className="container">
           <div className="over-one-top-wrap">
@@ -136,7 +135,7 @@ const OverOns = () => {
         </div>
       </section>
 
-      {/* About Us */}
+      
       <section className="over-one-about-us-sec">
         <div className="container">
           <div className="row align-items-center flex-row-reverse">
@@ -175,7 +174,7 @@ const OverOns = () => {
         </div>
       </section>
 
-      {/* Mid Section */}
+      
       <section className="over-one-mid-sec">
         <div className="common-wrap">
           <div className="over-one-mid-wrap">
@@ -238,7 +237,7 @@ const OverOns = () => {
         </div>
       </section>
 
-      {/* Team Section with Swiper */}
+      
       <section className="team-sec team-slider">
         <div className="container">
           <div className="team-area">
@@ -295,7 +294,7 @@ const OverOns = () => {
                 ))}
               </Swiper>
 
-              {/* Navigation Buttons */}
+              
               <div className="swiper-button-prev common-arrow">
                 <img src="/assets/prev.svg" alt="prev" />
               </div>

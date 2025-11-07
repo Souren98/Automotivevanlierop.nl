@@ -8,7 +8,7 @@ const ThankYouPage = () => {
   const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
-    // Show modal once on mount (like the original $(document).ready -> modal('show'))
+    
     setShowModal(true);
   }, []);
 
@@ -19,7 +19,7 @@ const ThankYouPage = () => {
 
   return (
     <div id="page">
-      {/* Modal */}
+     
       {showModal && (
         <>
           <div
@@ -72,7 +72,7 @@ const ThankYouPage = () => {
               </div>
             </div>
           </div>
-          {/* Backdrop */}
+         
           <div
             className="modal-backdrop fade show"
             onClick={closeModal}
@@ -81,7 +81,7 @@ const ThankYouPage = () => {
         </>
       )}
      
-      {/* Floating contact icons */}
+      
       <div className="fix-block">
         <div className="fix-wp">
           <a href="#">
@@ -119,7 +119,7 @@ const ThankYouPage = () => {
         </section>
       </main>
 
-      {/* Mobile contact bar */}
+      
       <div id="mobile-contact-bar">
         <div id="mobile-contact-bar-outer">
           <ul>

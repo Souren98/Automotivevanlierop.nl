@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Service = () => {
    useEffect(() => {
-      // Elfsight script already loads only once
+      
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {

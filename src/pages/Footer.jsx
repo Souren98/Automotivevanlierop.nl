@@ -17,16 +17,21 @@ const Footer = () => {
                                             <iframe frameborder="0" allowtransparency="true" src="https://www.klantenvertellen.nl/retrieve-widget.html?color=dark&button=true&lang=nl&tenantId=99&locationId=1052788" width="300" height="80"></iframe>
                                         </div>
                                         <div className="footer-whole-wp">
-                                            <a href="">
+                                            <a
+                                                href="https://wa.me/31600000000"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
                                                 <div className="footer-wp">
                                                     <img src="assets/footer-whatsapp.svg" alt="" />
                                                 </div>
                                                 <div className="footer-wp-info">
-                                                    <h6>whatsapp direct</h6>
+                                                    <h6>WhatsApp Direct</h6>
                                                     <h5>+31 6 0000 0000</h5>
                                                 </div>
                                             </a>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div className="col-lg-3">
@@ -132,7 +137,8 @@ const Footer = () => {
                                 <img src="assets/footer-bovag.svg" alt="" className="footer-bovag" />
                             </div>
                             <div className="each-footer-btm">
-                                <a href="">Privacy Policy Algemene voorwaarden</a>
+                                <a href="">Privacy Policy</a>
+                                <a href="">Algemene voorwaarden</a>
                             </div>
                             <div className="each-footer-btm">
                                 <ul>
@@ -149,7 +155,14 @@ const Footer = () => {
                                         <a href=""><img src="assets/footer-mail.svg" alt="" /></a>
                                     </li>
                                     <li>
-                                        <a href=""><img src="assets/footer-wp.svg" alt="" /></a>
+                                        <a
+                                            href="https://wa.me/31600000000"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img src="assets/footer-wp.svg" alt="WhatsApp" />
+                                        </a>
+
                                     </li>
                                 </ul>
                             </div>

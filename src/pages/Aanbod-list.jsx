@@ -9,7 +9,7 @@ const Aanbodlist = () => {
   };
 
   useEffect(() => {
-    // Elfsight script already loads only once
+
     const scriptId = "elfsight-platform-script";
 
     if (!document.getElementById(scriptId)) {
@@ -23,7 +23,7 @@ const Aanbodlist = () => {
 
   return (
     <main>
-      {/* Filter Section */}
+
       <section className="aanbod-filter-sec aanbod-list-filter">
         <div className="aanbod-filter-bg-mark">
           <img src="assets/aanbod-filter-bg-mark.svg" alt="" className="w-100" />
@@ -39,7 +39,7 @@ const Aanbodlist = () => {
                         <h3>Filter op:</h3>
                       </div>
                       <div className="row align-items-center">
-                        {/* Merk Filter */}
+                        
                         <div className="col-lg-3 col-6 aanbod-filter merk-filter">
                           <div className="each-filter position-relative dropdown" data-val="Merk">
                             <div
@@ -64,7 +64,7 @@ const Aanbodlist = () => {
                           </div>
                         </div>
 
-                        {/* Model Filter */}
+                        
                         <div className="col-lg-3 col-6 model-filter aanbod-filter">
                           <div className="each-filter position-relative dropdown" data-val="Model">
                             <div
@@ -89,7 +89,7 @@ const Aanbodlist = () => {
                           </div>
                         </div>
 
-                        {/* Brandstof Filter */}
+                        
                         <div className="col-lg-3 col-6 brandstof-filter aanbod-filter">
                           <div className="each-filter position-relative dropdown" data-val="Brandstof">
                             <div
@@ -114,7 +114,7 @@ const Aanbodlist = () => {
                           </div>
                         </div>
 
-                        {/* Transmissie Filter */}
+                       
                         <div className="col-lg-3 col-6 transmissie-filter aanbod-filter">
                           <div className="each-filter position-relative dropdown" data-val="Transmissie">
                             <div
@@ -139,7 +139,7 @@ const Aanbodlist = () => {
                     </div>
                   </div>
 
-                  {/* Sorteren op Filter */}
+                
                   <div className="col-xl-3">
                     <div className="filter-sort">
                       <div className="each-filter position-relative dropdown" data-val="Sorteren op">
@@ -166,7 +166,7 @@ const Aanbodlist = () => {
               </div>
             </div>
 
-            {/* Clear Filter */}
+          
             <div className="clear-filter-main">
               <div className="row align-items-center">
                 <div className="col-md-10">
@@ -190,7 +190,7 @@ const Aanbodlist = () => {
         </div>
       </section>
 
-      {/* Product List Section */}
+      
       <section className="aanbod-list-product-sec">
         <div className="container">
           <div className="aanbod-list-product-area">

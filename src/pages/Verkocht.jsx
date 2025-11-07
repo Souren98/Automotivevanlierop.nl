@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const VerkochtPage = () => {
    useEffect(() => {
-      // Elfsight script already loads only once
+     
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -15,7 +15,7 @@ const VerkochtPage = () => {
     }, []);
   return (
     <main>
-      {/* Top Section */}
+  
       <section className="verkocht-top-sec">
         <div className="aanbod-filter-bg-mark">
           <img
@@ -42,12 +42,12 @@ const VerkochtPage = () => {
         </div>
       </section>
 
-      {/* Aanbod List Section */}
+      
       <section className="aanbod-list-product-sec">
         <div className="container">
           <div className="aanbod-list-product-area">
             <div className="row">
-              {/* Repeat Product Card */}
+             
               {Array.from({ length: 12 }).map((_, index) => (
                 <div key={index} className="col-xl-4 col-lg-6 mb-4">
                   <div className="each-aanbod-product">

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const Garantie = () => {
      useEffect(() => {
-        // Elfsight script already loads only once
+        
         const scriptId = "elfsight-platform-script";
     
         if (!document.getElementById(scriptId)) {

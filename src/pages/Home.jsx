@@ -173,72 +173,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      <section className="aanbod-filter-sec home-filter-sec">
-        <div className="container">
-          <div className="home-filter-replace"></div>
-          {/* <div className="aanbod-filter-wrap">
-            <div className="hidden-filter">
-              <div className="filter-main">
-                <div className="row align-items-center">
-                  <div className="col-lg-10">
-                    <div className="row align-items-center">
-                      <div className="col-lg-3 col-6 aanbod-filter merk-filter">
-                        <h6>Merk:</h6>
-                        <div className="each-filter position-relative dropdown" data-val="Merk">
-                          <div className="select-style" data-bs-toggle="dropdown">Merk </div>
-                          <div className="filter-content position-absolute w-100 dropdown-menu" data-lenis-prevent id="merk_html">
-                            <label className="position-relative cursor-pointer">
-                              <input type="checkbox" name="merk[]" className="form-check-input merk_checkbox" id="merk_filter17" value="Toyota" />Toyota
-                              <span>2</span>
-                            </label>
-                            <label className="position-relative cursor-pointer">
-                              <input type="checkbox" name="merk[]" className="form-check-input merk_checkbox" id="merk_filter18" value="Volkswagen" />Volkswagen
-                              <span>2</span>
-                            </label>
-                            <label className="position-relative cursor-pointer">
-                              <input type="checkbox" name="merk[]" className="form-check-input merk_checkbox" id="merk_filter19" value="Volvo" />Volvo
-                              <span>2</span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="col-lg-3 col-6 model-filter aanbod-filter radio_filter">
-                        <h6>Model:</h6>
-                        <div className="each-filter position-relative dropdown border-0" data-lenis-prevent id="mdl-each-flt" data-val="Model">
-                          <div className="select-style mb-0" data-bs-toggle="dropdown" aria-expanded="true">Model</div>
-                          <div className="filter-content position-absolute w-100 dropdown-menu" id="model_html" data-popper-placement="bottom-start">
-                            <label className="position-relative cursor-pointer">
-                              <input type="checkbox" name="model" className="form-check-input model_checkbox" value="V60" />V60
-                            </label>
-                            <label className="position-relative cursor-pointer">
-                              <input type="checkbox" name="model" className="form-check-input model_checkbox" value="X1" />X1
-                            </label>
-                            <label className="position-relative cursor-pointer">
-                              <input type="checkbox" name="model" className="form-check-input model_checkbox" value="X5" />X5
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-
-                      Other filter sections remain similar structure
-
-                    </div>
-                  </div>
-                  <div className="col-lg-2 text-lg-end text-center">
-                    <div className="filter-btn">
-                      <button className="common-btn">
-                        Zoeken
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-        </div>
-      </section>
+      
 
       <section className="banner-btm">
         <div className="container">
@@ -294,12 +229,7 @@ const HomePage = () => {
                   spaceBetween={20}
                   slidesPerView={1}
                   loop={false}
-                  // breakpoints={{
-                  //   320: { slidesPerView: 1 },
-                  //   767: { slidesPerView: 1 },
-                  //   992: { slidesPerView: 2 },
-                  //   1200: { slidesPerView: 3 },
-                  // }}
+                
                   breakpoints={{
                     320: {
                       slidesPerView: 1,
@@ -369,7 +299,7 @@ const HomePage = () => {
                   ))}
                 </Swiper>
 
-                {/* Swiper Arrows */}
+              
                 <div className="swiper-button-prev common-arrow">
                   <img src="/assets/prev.svg" alt="prev" />
                 </div>
@@ -408,7 +338,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            {/* Replace swiper with Bootstrap grid */}
+            
             <div className="service-grid">
               <div className="row">
                 <div className="col-lg-4 col-md-6 mb-4">

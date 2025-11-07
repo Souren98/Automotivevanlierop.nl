@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-// import './Header.css'; 
 
 const Header = () => {
     const [isMenuActive, setIsMenuActive] = useState(false);
@@ -85,7 +84,7 @@ const Header = () => {
                             </div>
                         </div>
 
-                        {/* Mobile Menu */}
+                       
                         <div className={`mobile-header-menu ${isMenuActive ? 'mob-menu-active' : ''}`}>
                             <div className="mobile-header-menu-wrap">
                                 <button

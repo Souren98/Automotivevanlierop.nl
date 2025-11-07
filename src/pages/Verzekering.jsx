@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const VerzekeringDetail = () => {
    useEffect(() => {
-      // Elfsight script already loads only once
+    
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -15,7 +15,7 @@ const VerzekeringDetail = () => {
     }, []);
   return (
     <main>
-      {/* Back Button Section */}
+      
       <section className="back-btn">
         <div className="container">
           <a href="#" className="common-btn border-btn">
@@ -25,7 +25,7 @@ const VerzekeringDetail = () => {
         </div>
       </section>
 
-      {/* Top Section */}
+      
       <section className="diens-dtl-top-sec">
         <div className="diens-dtl-top-mark">
           <img src="assets/diens-dtl-mark.svg" alt="" className="w-100" />
@@ -73,7 +73,7 @@ const VerzekeringDetail = () => {
         </div>
       </section>
 
-      {/* Middle Section */}
+      
       <section className="diens-dtl-mid-sec">
         <div className="container">
           <div className="diens-dtl-mid-area">
@@ -118,7 +118,7 @@ const VerzekeringDetail = () => {
         </div>
       </section>
 
-      {/* Form Section */}
+      
       <section className="form-sec">
         <div className="common-wrap">
           <div className="form-sec-wrap">
@@ -196,7 +196,7 @@ const VerzekeringDetail = () => {
         </div>
       </section>
 
-      {/* Related Services Section */}
+      
       <section className="service-sec diend-dtl-service-sec">
         <div className="container">
           <div className="service-title text-center mb-4">

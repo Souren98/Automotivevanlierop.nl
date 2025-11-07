@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const Vacatureslist = () => {
    useEffect(() => {
-      // Elfsight script already loads only once
+      
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -15,7 +15,7 @@ const Vacatureslist = () => {
     }, []);
   return (
     <main>
-      {/* Inner Banner */}
+     
       <section className="inner-banner">
         <div className="common-wrap">
           <div className="inner-banner-img">
@@ -33,12 +33,12 @@ const Vacatureslist = () => {
         </div>
       </section>
 
-      {/* Service List Section */}
+      
       <section className="diens-service-list-sec">
         <div className="container">
           <div className="diens-service-list-area">
             <div className="row">
-              {/* Job Card */}
+             
               {[
                 {
                   title: "Verkoop",

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const AircoService = () => {
    useEffect(() => {
-      // Elfsight script already loads only once
+      
       const scriptId = "elfsight-platform-script";
   
       if (!document.getElementById(scriptId)) {
@@ -258,7 +258,7 @@ const AircoService = () => {
                 </a>
               </div>
 
-              {/* Second row */}
+            
               <div className="col-lg-6">
                 <a href="">
                   <div className="each-service-block position-relative h-100">

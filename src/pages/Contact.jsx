@@ -46,12 +46,12 @@ const Contact = () => {
             setErrors({});
             alert("Formulier succesvol verzonden!");
             console.log("Form data:", formData);
-            // You can now send formData to API here
+           
         }
     };
 
     useEffect(() => {
-    // Elfsight script already loads only once
+   
     const scriptId = "elfsight-platform-script";
 
     if (!document.getElementById(scriptId)) {
